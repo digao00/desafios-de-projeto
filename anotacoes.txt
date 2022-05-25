@@ -5,4 +5,4 @@ git status (pa vê como que ta as coisa e os baguio lá)
 git add . (adiciona todos os arquivos novos)
 git commit -m " " (fazer um novo commit para colocar no github e colocar um recado)
 git push origin main (enviar os commits que vc criou pro github)
-
+ to fazendo aula de ingles
