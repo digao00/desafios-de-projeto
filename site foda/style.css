@@ -1,0 +1,44 @@
+body {
+    background-image: url(tumblr_static_background.jpg);
+}
+
+#title {
+    color: blueviolet;
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.subtitle {
+    color: rgb(255, 2, 2);
+    font-size: 30px;
+    font-family: sans-serif;
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 20px;
+}
+.conteudo {
+    color: white;
+    padding: 20px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid white;
+    margin: 0px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+.rodape {
+    color: white;
+    font-size: 15px;
+    padding: 0px 8px 8px 0px;
+    margin: 2px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#contatos {
+    color: white;
+    font-size: 15px;
+    margin-top: 0px;
+
+}
+.foto1 {
+    border: 1px solid black;
+    border-radius: 15px;
+}
