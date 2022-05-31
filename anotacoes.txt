@@ -5,3 +5,18 @@ git status (pa vê como que ta as coisa e os baguio lá)
 git add . (adiciona todos os arquivos novos)
 git commit -m " " (fazer um novo commit para colocar no github e colocar um recado)
 git push origin main (enviar os commits que vc criou pro github)
+
+comandos importantes para html 5 para eu nao esquecer
+<!DOCTYPE html><html> (para todo começo de site)
+<head> (para colocar as informações mais importantes do site, como titulo, metadado e arquivo css)
+<body> (a estrutura do site)
+<header> (titulo principal)
+<section> (seção para falar de algum assunto)
+<article> (conteudo da section)
+<p> (parágrafo)
+<img src="(link da imagem ou arquivo)" alt="(mensagem caso a imagem nao carregue)">
+<h1 a h6> (tamanho do texto)
+class ou id serve pra vc colocar um classe pra poder programar no css3
+exemplo <h1 class="titulo">fodasse</h1>
+<a href="(link)">alguma frase</a> (para colocar um link se vc clicar nessa palavra)
+<a href="(link)" target="_blank">palavra</a> (pra quando clicar no link, vc ir para outra pagina)
