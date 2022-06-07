@@ -1,0 +1,141 @@
+* { /* better call jonh */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+    margin:auto;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgb(255, 252, 252);
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-45deg, rgba(205,178,0,1) 0%, rgba(190,30,226,1) 64%, rgba(0,212,255,1) 100%);
+    background-size: 400% 400%;
+    /* animaçao vai ser aqui */
+}
+.card {
+    height: 400px;
+    width: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.card-wrapper {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.card-wrapper::before {
+    content: '';
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    display: block;
+    border: 2px solid rgb(1, 1, 1);
+    transition: 0.3s;
+    opacity: 0;
+}
+.card-wrapper h2 {
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    letter-spacing: 4px;
+    margin: 0%;
+    transition: 0.3s;
+}
+.card-wrapper p {
+    font-size: 0;
+    opacity: 0;
+    visibility: hidden;
+    font-weight: bold;
+    transition: 0.3s;
+    color: rgb(0, 0, 0);
+}
+.card:hover > .card-wrapper::before {
+    height: 300px;
+    width: 400px;
+    opacity: 1;
+}
+.card:hover > .card-wrapper p {
+    opacity: 1;
+    visibility: visible;
+    font-size: 18px;
+}
+.wrapper .checkbox .checkbox-wrapper #toggle {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.wrapper {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 0;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+.checkbox {
+    height: 90px;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+}
+.checkbox .trace {
+    width: 70px;
+    height: 7px;
+    background-color: rgb(3, 2, 2);
+    position: absolute;
+    border-radius: 4px;
+    transition: 0.5s ease-out;   
+}
+.checkbox .trace:nth-last-child(1) {
+    top: 26px;
+    transform: rotate(0);
+}
+.checkbox .trace:nth-last-child(2) {
+    top: 46px;
+    transform: rotate(0);
+}
+.checkbox .trace:nth-last-child(3) {
+    top: 66px;
+    transform: rotate(0);
+}
+#toggle {
+    display: none;
+}
+#toggle:checked + .checkbox .trace:nth-child(1) {
+    transform: rotate(-45deg);
+    top: 47px;
+}
+#toggle:checked + .checkbox .trace:nth-child(2) {
+    transform: translateX(-100px);
+    width: 30px;
+    visibility: hidden;
+    opacity: 0;
+}
+#toggle:checked + .checkbox .trace:nth-child(3) {
+    transform: rotate(45deg);
+    top: 48px;
+}
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}

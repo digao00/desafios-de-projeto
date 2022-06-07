@@ -20,3 +20,7 @@ class ou id serve pra vc colocar um classe pra poder programar no css3
 exemplo <h1 class="titulo">fodasse</h1>
 <a href="(link)">alguma frase</a> (para colocar um link se vc clicar nessa palavra)
 <a href="(link)" target="_blank">palavra</a> (pra quando clicar no link, vc ir para outra pagina)
+
+no css
+hover = quando passar mouse em cima
+checked = quando uma checkbox foi marcada
