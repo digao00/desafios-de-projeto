@@ -1,0 +1,106 @@
+.wrapper {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+}
+.checkbox {
+    height: 90px;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    transition: 400ms ease-in-out 0s;
+}
+.checkbox .trace {
+    width: 70px;
+    height: 7px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    border-radius: 4px;
+    transition: 0.5s ease-out;   
+}
+.checkbox .trace:nth-last-child(1) {
+    top: 26px;
+    transform: rotate(0);
+}
+.checkbox .trace:nth-last-child(2) {
+    top: 46px;
+    transform: rotate(0);
+}
+.checkbox .trace:nth-last-child(3) {
+    top: 66px;
+    transform: rotate(0);
+}
+.menu {
+    position: absolute;
+    top: 28px;
+    right: 38px;
+    background: transparent;
+    height: 40px;
+    width: 40px;
+    box-shadow: 0px 0px 0px 0px rgb(255, 255, 255);
+    z-index: -1;
+    transition: 200ms 0s;
+    border-radius: 25%;
+    opacity: 0;
+}
+.menu-items {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 175%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    opacity: 1;
+    visibility: visible;
+    transition: 200ms 0s;
+    color: #000;
+}
+.menu-items ul {
+    list-style-type: none;
+}
+.menu-items ul li a {
+    margin: 10px 0;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    letter-spacing: 4px;
+    font-size: 40px;
+}
+#toggle {
+    display: none;
+}
+#toggle:checked + .checkbox .trace:nth-child(1) {
+    transform: rotate(-45deg);
+    top: 47px;
+    background-color: rgb(0, 0, 0);
+}
+#toggle:checked + .checkbox .trace:nth-child(2) {
+    transform: translateX(-100px);
+    width: 30px;
+    visibility: hidden;
+    opacity: 0;
+}
+#toggle:checked + .checkbox .trace:nth-child(3) {
+    transform: rotate(45deg);
+    top: 48px;
+    background-color: #000;
+}
+#toggle:checked + .checkbox {
+    background-color: white;
+}
+#toggle:checked ~ .menu {
+    box-shadow: 0px 0px 0px 50vh white;
+    z-index: 3;
+    opacity: 1;
+}
+#toggle:checked ~ .menu-items {
+    visibility: visible;
+    opacity: 1;
+}

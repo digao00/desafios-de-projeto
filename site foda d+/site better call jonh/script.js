@@ -1,1 +1,1 @@
-console.log("se leu, se fudeu")
+console.log("XD")
